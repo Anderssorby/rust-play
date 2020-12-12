@@ -5,7 +5,7 @@ let
   pkgs = import sources.nixpkgs { };
   hello = import ./hello.nix { inherit sources pkgs; };
 
-  name = "anderscs/hello";
+  name = "anderscs/rust-play-backend";
   tag = "latest";
 
 in pkgs.dockerTools.buildLayeredImage {
