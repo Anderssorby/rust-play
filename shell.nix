@@ -5,6 +5,6 @@ let
 in
 pkgs.mkShell {
   buildInputs = [
-    rust pkgs.rustfmt
+    rust pkgs.rustfmt pkgs.wasm-pack pkgs.wasm-bindgen-cli
   ];
 }
