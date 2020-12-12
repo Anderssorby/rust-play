@@ -5,6 +5,6 @@ let
 in
 pkgs.mkShell {
   buildInputs = [
-    rust
+    rust pkgs.rustfmt
   ];
 }
